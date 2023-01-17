@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "e4320bfb-a13e-46df-af28-22b07e30274d",
+		"name": "YII2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17312480"
+	},
+	"item": [
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Name",
+							"value": "Test product",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "Test description",
+							"type": "text"
+						},
+						{
+							"key": "Price",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "Status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://phpstack-918959-3189766.cloudwaysapps.com/restapi/web/index.php?r=product/create-product",
+					"protocol": "https",
+					"host": [
+						"phpstack-918959-3189766",
+						"cloudwaysapps",
+						"com"
+					],
+					"path": [
+						"restapi",
+						"web",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "product/create-product"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://phpstack-918959-3189766.cloudwaysapps.com/restapi/web/index.php?r=product/get-product",
+					"protocol": "https",
+					"host": [
+						"phpstack-918959-3189766",
+						"cloudwaysapps",
+						"com"
+					],
+					"path": [
+						"restapi",
+						"web",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "product/get-product"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product with post/ Get Product with GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://phpstack-918959-3189766.cloudwaysapps.com/restapi/web/index.php?r=product/product",
+					"protocol": "https",
+					"host": [
+						"phpstack-918959-3189766",
+						"cloudwaysapps",
+						"com"
+					],
+					"path": [
+						"restapi",
+						"web",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "product/product"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
