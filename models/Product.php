@@ -1,4 +1,14 @@
 <?php
+/**
+ * Product model class
+ *
+ *
+ * @copyright  2023 Vandana P.
+ * @license    https://www.yiiframework.com/license   
+ * @author     Vandana Pareek <vandana.pareek42@gmail.com>
+ * @version    PHP: 7.4.32 
+ * @since      Class available since Release 1.2.0 (17 Jan,2023)
+ */ 
 
 namespace app\models;
 
@@ -64,8 +74,6 @@ class Product extends \yii\db\ActiveRecord
         ];
     }
 
-  
-    
     public function getQuantity() {  
 	    return $this->hasMany(Quantity::className(), ['ProductID' => 'ID']);
     }
